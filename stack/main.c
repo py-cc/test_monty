@@ -16,7 +16,6 @@ int main(int argc, char **argv)
 	while (getline(&buffer, &size_len, file) != EOF)
 	{
 		string = strtok(buffer, " \n");
-		tmp = string;
 		if (string != NULL)
 		{
 			printf("%s\n", string);
