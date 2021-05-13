@@ -35,8 +35,11 @@ typedef struct stack_s
 typedef struct instruction_s
 {
         char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+        void (*f)(stack_t **stack, int number, unsigned int line_number);
 } instruction_t;
 
-ssize_t read_textfile(const char *filename, size_t size, char **texto);
+
+void fun_pall(stack_t **head, int number __attribute__((unused)), unsigned int line_number __attribute__((unused)));
+void function_instruction(char *token, int number, unsigned int line_number, stack_t **head);
+void fun_push(stack_t **head, int number, unsigned int line_number);
 #endif /* MONTY_H */
