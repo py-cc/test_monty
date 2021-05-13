@@ -1,5 +1,6 @@
 #include "monty.h"
 
+/* (: funciono*/
 
 int main(int argc, char **argv)
 {
